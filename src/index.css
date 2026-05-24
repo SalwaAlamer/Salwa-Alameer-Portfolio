@@ -1,5 +1,7 @@
 @import 'tailwindcss';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   color: #2d3748;
   background: #ececec;
@@ -10,6 +12,11 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.dark {
+  color: #e7eef7;
+  background: #0d1320;
 }
 
 html {
@@ -25,6 +32,13 @@ body {
     radial-gradient(circle at 18% 12%, rgba(162, 194, 225, 0.26), transparent 28rem),
     radial-gradient(circle at 84% 10%, rgba(110, 168, 214, 0.16), transparent 24rem),
     #ececec;
+}
+
+.dark body {
+  background:
+    radial-gradient(circle at 18% 12%, rgba(110, 168, 214, 0.14), transparent 28rem),
+    radial-gradient(circle at 84% 10%, rgba(162, 194, 225, 0.1), transparent 24rem),
+    #0d1320;
 }
 
 img {
@@ -53,6 +67,40 @@ a {
   background: rgba(255, 255, 255, 0.52);
   box-shadow: 0 24px 80px rgba(45, 55, 72, 0.12);
   backdrop-filter: blur(22px);
+}
+
+.dark .glass-panel {
+  border-color: rgba(162, 194, 225, 0.16);
+  background: rgba(17, 25, 40, 0.68);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+}
+
+.dark .text-\[\#2D3748\] {
+  color: #e7eef7;
+}
+
+.dark .text-slate-600,
+.dark .text-slate-650,
+.dark .text-slate-500 {
+  color: #c5d0dc;
+}
+
+.dark .text-slate-400 {
+  color: #8fa1b6;
+}
+
+.dark .bg-white\/60,
+.dark .bg-white\/65,
+.dark .bg-white\/75,
+.dark .bg-white\/80,
+.dark .bg-white\/90 {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.dark .border-white\/70,
+.dark .border-white\/80,
+.dark .border-\[\#E2E8F0\] {
+  border-color: rgba(162, 194, 225, 0.16);
 }
 
 .section-shell {

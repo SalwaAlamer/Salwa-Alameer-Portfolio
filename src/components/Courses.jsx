@@ -5,7 +5,7 @@ import { fadeUp, Section, staggerContainer } from './Section.jsx';
 
 export default function Courses() {
   return (
-    <Section id="courses" eyebrow="Courses" title="Continuous learning across deep learning, data, and AI career tracks.">
+    <Section id="courses" eyebrow="Continuous Learning" title="Growing across deep learning, data, and AI career pathways.">
       <motion.div
         variants={staggerContainer()}
         initial="hidden"

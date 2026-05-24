@@ -4,7 +4,7 @@ import { fadeUp, Section, staggerContainer } from './Section.jsx';
 
 export default function Skills() {
   return (
-    <Section id="skills" eyebrow="Skills" title="A focused AI toolkit for building, evaluating, and presenting systems." className="bg-white/35">
+    <Section id="skills" eyebrow="Technical Toolkit" title="The tools I use to turn AI ideas into working systems." className="bg-white/35 dark:bg-white/5">
       <motion.div
         variants={staggerContainer()}
         initial="hidden"

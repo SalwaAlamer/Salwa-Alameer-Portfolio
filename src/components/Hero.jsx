@@ -1,5 +1,5 @@
 import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion';
-import { ArrowRight, GitBranchIcon, Mail, ScanSearch } from 'lucide-react';
+import { ArrowDownToLine, ArrowRight, BriefcaseBusinessIcon, GitBranchIcon, ScanSearch } from 'lucide-react';
 import { impactPillars, profile } from '../data/portfolioData.js';
 
 export default function Hero() {
@@ -11,7 +11,7 @@ export default function Hero() {
     <section id="home" className="relative isolate min-h-screen overflow-hidden pt-28 sm:pt-32">
       <motion.div
         style={{ y: backgroundY }}
-        className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_18%_24%,rgba(162,194,225,0.42),transparent_34%),radial-gradient(ellipse_at_82%_18%,rgba(110,168,214,0.22),transparent_30%),linear-gradient(180deg,#ECECEC_0%,#EEF4F8_56%,#ECECEC_100%)]"
+        className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_18%_24%,rgba(162,194,225,0.42),transparent_34%),radial-gradient(ellipse_at_82%_18%,rgba(110,168,214,0.22),transparent_30%),linear-gradient(180deg,#ECECEC_0%,#EEF4F8_56%,#ECECEC_100%)] dark:bg-[radial-gradient(ellipse_at_18%_24%,rgba(110,168,214,0.2),transparent_34%),radial-gradient(ellipse_at_82%_18%,rgba(162,194,225,0.12),transparent_30%),linear-gradient(180deg,#0D1320_0%,#111B2B_56%,#0D1320_100%)]"
       />
       <div className="section-shell grid items-center gap-10 pb-14 sm:gap-12 sm:pb-20 lg:min-h-[calc(100vh-7rem)] lg:grid-cols-[1.06fr_0.94fr]">
         <motion.div
@@ -21,34 +21,44 @@ export default function Hero() {
           className="max-w-3xl"
         >
           <p className="mb-4 text-base font-semibold text-[#6EA8D6] sm:text-lg">{profile.title}</p>
-          <h1 className="max-w-4xl text-[2.35rem] font-semibold leading-[1.05] tracking-tight text-[#2D3748] sm:text-6xl lg:text-7xl">
+          <h1 className="max-w-4xl text-[2.35rem] font-semibold leading-[1.05] tracking-tight text-[#2D3748] sm:text-6xl lg:text-7xl dark:text-[#E7EEF7]">
             {profile.headline}
           </h1>
-          <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:mt-7 sm:text-lg">{profile.subtext}</p>
+          <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:mt-7 sm:text-lg dark:text-slate-300">{profile.subtext}</p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <a
               href="#project"
             className="group inline-flex items-center justify-center gap-2 rounded-full bg-[#2D3748] px-6 py-3.5 text-sm font-semibold text-white shadow-xl shadow-slate-900/15 transition hover:bg-[#6EA8D6] hover:shadow-[#6EA8D6]/30"
             >
-              View Projects
+              View My Work
               <ArrowRight size={17} className="transition group-hover:translate-x-1" />
             </a>
             <a
-              href="#contact"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/80 bg-white/75 px-6 py-3.5 text-sm font-semibold text-[#2D3748] shadow-lg shadow-slate-900/5 backdrop-blur-xl transition hover:border-[#6EA8D6] hover:shadow-[#6EA8D6]/20"
+              href={profile.cv}
+              download
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/80 bg-white/75 px-6 py-3.5 text-sm font-semibold text-[#2D3748] shadow-lg shadow-slate-900/5 backdrop-blur-xl transition hover:border-[#6EA8D6] hover:shadow-[#6EA8D6]/20 dark:border-[#A2C2E1]/20 dark:bg-white/10 dark:text-[#E7EEF7]"
             >
-              <Mail size={17} />
-              Contact Me
+              <ArrowDownToLine size={17} />
+              Download CV
             </a>
             <a
               href={profile.github}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-[#E2E8F0] px-6 py-3.5 text-sm font-semibold text-[#2D3748] transition hover:border-[#6EA8D6] hover:bg-white/70"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-[#E2E8F0] px-6 py-3.5 text-sm font-semibold text-[#2D3748] transition hover:border-[#6EA8D6] hover:bg-white/70 dark:border-[#A2C2E1]/20 dark:text-[#E7EEF7] dark:hover:bg-white/10"
             >
               <GitBranchIcon size={17} />
               GitHub
+            </a>
+            <a
+              href={profile.linkedin}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-[#E2E8F0] px-6 py-3.5 text-sm font-semibold text-[#2D3748] transition hover:border-[#6EA8D6] hover:bg-white/70 dark:border-[#A2C2E1]/20 dark:text-[#E7EEF7] dark:hover:bg-white/10"
+            >
+              <BriefcaseBusinessIcon size={17} />
+              LinkedIn
             </a>
           </div>
         </motion.div>

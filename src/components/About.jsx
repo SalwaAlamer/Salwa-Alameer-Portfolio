@@ -9,18 +9,20 @@ const facts = [
 
 export default function About() {
   return (
-    <Section id="about" eyebrow="About" title="Building practical AI for real-world progress.">
+    <Section id="about" eyebrow="About" title="Building practical AI with purpose.">
       <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="glass-panel rounded-[2rem] p-6 sm:p-8">
           <p className="text-lg leading-8 text-slate-600">
-            I am a Computer Science graduate specializing in Artificial Intelligence and Computer Vision. I focus
-            on building practical AI solutions that solve real-world problems, from road safety systems to
-            interactive digital platforms.
+            I am a Computer Science graduate specializing in Artificial Intelligence and Computer Vision. I am
+            passionate about building practical AI systems that solve real problems, not just academic demos. My
+            work is driven by the belief that technology should improve people's lives, support smarter
+            infrastructure, and create measurable impact.
           </p>
           <p className="mt-5 text-lg leading-8 text-slate-600">
-            My goal is to contribute to smart infrastructure, digital transformation, and technology-driven impact
-            aligned with Saudi Vision 2030. I enjoy turning ideas into working systems that are clear, useful, and
-            ready to support better decisions.
+            Through projects like SafeRoad AI, I explored how computer vision can help detect road hazards,
+            support maintenance decisions, and contribute to safer communities. I aim to grow as an AI developer
+            who combines technical depth, thoughtful design, and a strong sense of purpose aligned with Saudi
+            Vision 2030.
           </p>
         </div>
 

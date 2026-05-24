@@ -4,18 +4,13 @@ import { fadeUp, Section, staggerContainer } from './Section.jsx';
 
 export default function WhyHireMe() {
   return (
-    <Section id="why-hire-me" eyebrow="Why Hire Me" title="Ready to contribute to teams building useful technology." className="bg-[#EEF5FB]/80">
+    <Section id="why-hire-me" eyebrow="Why I Can Add Value" title="I bring more than technical skills." className="bg-[#EEF5FB]/80 dark:bg-white/5">
       <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
         <div className="glass-panel rounded-[2rem] p-7">
           <p className="text-lg leading-8 text-slate-600">
-            I combine AI knowledge with practical implementation. I can move from idea to data preparation,
-            model development, dashboard design, and deployment thinking while keeping the end user and real-world
-            value in focus.
-          </p>
-          <p className="mt-5 text-lg leading-8 text-slate-600">
-            I understand how to present technical work professionally, care about usability and impact, and I am
-            ready to contribute, learn fast, and grow in a COOP environment aligned with digital transformation and
-            Saudi Vision 2030.
+            I bring more than technical skills. I bring curiosity, discipline, and the ability to turn an idea
+            into a working product. I understand how to build, explain, and present technical solutions in a way
+            that is clear, useful, and professional.
           </p>
         </div>
 
@@ -31,7 +26,8 @@ export default function WhyHireMe() {
             return (
               <motion.div key={reason.title} variants={fadeUp} whileHover={{ scale: 1.02, y: -4 }} className="rounded-[1.5rem] border border-white/80 bg-white/65 p-5 shadow-lg shadow-slate-900/5 backdrop-blur">
                 <Icon size={23} className="mb-4 text-[#6EA8D6]" />
-                <p className="font-semibold leading-6 text-[#2D3748]">{reason.title}</p>
+                <p className="font-semibold leading-6 text-[#2D3748] dark:text-[#E7EEF7]">{reason.title}</p>
+                <p className="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-300">{reason.text}</p>
               </motion.div>
             );
           })}

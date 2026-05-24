@@ -5,7 +5,7 @@ import { fadeUp, Section, staggerContainer } from './Section.jsx';
 
 export default function Contact() {
   return (
-    <Section id="contact" eyebrow="Contact" title="Open to COOP, internship, and early-career AI opportunities.">
+    <Section id="contact" eyebrow="Let's Connect" title="Open to COOP, internship, and early-career AI opportunities.">
       <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="glass-panel rounded-[2rem] p-7 sm:p-8">
           <Send size={31} className="mb-6 text-[#6EA8D6]" />
