@@ -86,7 +86,18 @@ export default function Hero() {
                   >
                     <div className="flex items-center justify-between gap-4">
                       <span className="text-sm font-medium text-white/85">{item}</span>
-                      <span className="h-2 w-8 rounded-full bg-[#A2C2E1]/80" />
+                      <span className="flex shrink-0 items-end gap-1.5 rounded-full border border-[#A2C2E1]/20 bg-[#A2C2E1]/10 px-2.5 py-2 shadow-inner shadow-white/5">
+                        {[0, 1, 2].map((bar) => (
+                          <motion.span
+                            key={bar}
+                            className="w-1.5 rounded-full bg-[#A2C2E1] shadow-[0_0_12px_rgba(162,194,225,0.65)]"
+                            initial={false}
+                            animate={reduceMotion ? undefined : { height: [8 + bar * 3, 15 - bar * 2, 8 + bar * 3] }}
+                            transition={{ duration: 2.2, delay: index * 0.16 + bar * 0.12, repeat: Infinity, ease: 'easeInOut' }}
+                            style={{ height: `${8 + bar * 3}px` }}
+                          />
+                        ))}
+                      </span>
                     </div>
                   </motion.div>
                 ))}
