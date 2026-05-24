@@ -14,7 +14,7 @@ import { profile } from './data/portfolioData.js';
 export default function App() {
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-[#ECECEC] text-[#2D3748] transition-colors duration-500 dark:bg-[#0D1320] dark:text-[#E7EEF7]">
-      <div aria-hidden="true" className="pointer-events-none fixed inset-0 z-[8] grid place-items-center overflow-hidden">
+      <div aria-hidden="true" className="pointer-events-none fixed inset-0 z-0 grid place-items-center overflow-hidden">
         <img
           src={profile.saudiSymbol}
           alt=""

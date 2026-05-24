@@ -28,7 +28,11 @@ function ProjectCard({ project, featured = false }) {
               href={project.github}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-[#ECECEC] px-5 py-3 text-sm font-semibold text-[#2D3748] transition hover:bg-[#A2C2E1] dark:bg-[#E7EEF7] dark:text-[#0D1320] dark:hover:bg-[#A2C2E1]"
+              className={`inline-flex shrink-0 items-center justify-center gap-2 rounded-full border px-5 py-3 text-sm font-semibold backdrop-blur-xl transition hover:-translate-y-0.5 ${
+                featured
+                  ? 'border-[#A2C2E1]/20 bg-white/10 text-[#E7EEF7] shadow-lg shadow-black/10 hover:border-[#A2C2E1]/45 hover:bg-[#6EA8D6]/16 hover:shadow-[#6EA8D6]/15'
+                  : 'border-white/70 bg-[#ECECEC]/80 text-[#2D3748] shadow-lg shadow-slate-900/5 hover:border-[#6EA8D6]/45 hover:bg-[#A2C2E1]/35 dark:border-[#A2C2E1]/15 dark:bg-white/[0.07] dark:text-[#E7EEF7] dark:shadow-black/20 dark:hover:bg-[#6EA8D6]/12'
+              }`}
             >
               <GitBranchIcon size={17} />
               GitHub
@@ -109,7 +113,7 @@ export default function Project() {
     <Section
       id="project"
       eyebrow="Selected Work"
-      title="Selected work for AI impact, smart infrastructure, and professional visibility."
+      title="Proof through systems I have built, tested, and presented."
     >
       <div className="grid gap-8">
         {projects.map((item, index) => (

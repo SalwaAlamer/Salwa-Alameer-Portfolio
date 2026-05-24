@@ -9,9 +9,8 @@ export default function Impact() {
           <Target size={28} />
         </div>
         <p className="max-w-4xl text-xl leading-9 text-slate-600 dark:text-slate-300">
-          I do not see AI as only models, code, or metrics. I see it as a tool for solving problems that affect
-          people, cities, and communities. My goal is to build intelligent systems that are useful, reliable, and
-          meaningful in the real world.
+          I do not see AI as only models, code, or metrics. I see it as a way to make complex signals easier to
+          understand, verify, and act on. The best technology feels useful before it feels impressive.
         </p>
       </div>
     </Section>

@@ -8,9 +8,8 @@ export default function WhyHireMe() {
       <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
         <div className="glass-panel rounded-[2rem] p-7">
           <p className="text-lg leading-8 text-slate-600 dark:text-slate-300">
-            I bring more than technical skills. I bring curiosity, discipline, and the ability to turn an idea
-            into a working product. I understand how to build, explain, and present technical solutions in a way
-            that is clear, useful, and professional.
+            I work with curiosity, patience, and care for the full product: the problem, the code, the result, and
+            the way it is presented. That mix helps me contribute beyond isolated tasks.
           </p>
         </div>
 

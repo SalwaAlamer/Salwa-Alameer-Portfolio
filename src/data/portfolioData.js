@@ -10,13 +10,9 @@ import {
   GraduationCap,
   Layers3,
   Mail,
-  MapPinned,
-  Phone,
   Rocket,
   ShieldCheck,
-  Sparkles,
   SquareTerminal,
-  TrendingUp,
   UsersRound,
   Wrench,
 } from 'lucide-react';
@@ -26,9 +22,8 @@ export const profile = {
   title: 'AI & Computer Vision Computer Science Graduate',
   headline: 'Building Intelligent AI Systems for Safer, Smarter Communities',
   subtext:
-    'I build AI-powered solutions that turn data into real-world impact. My work focuses on computer vision, intelligent monitoring, and digital tools that support safer infrastructure, smarter decisions, and technology-driven progress.',
+    'I turn visual data into practical tools for detection, monitoring, and decision support. My work connects computer vision with clear interfaces that help people understand and act faster.',
   email: 'salwaalameer5@gmail.com',
-  phone: '0533650908',
   linkedin: 'https://linkedin.com/in/salwa-al-ameer',
   github: 'https://github.com/SalwaAlamer',
   logo: '/assets/salwa-sa-logo.png',
@@ -78,13 +73,13 @@ export const projects = [
     subtitle: 'AI-Based Pothole Detection System',
     github: 'https://github.com/SalwaAlamer/SafeRoad-AI',
     description:
-      'SafeRoad AI was built to address a real infrastructure challenge: road hazards that can affect safety, comfort, and maintenance response. The system uses computer vision to detect potholes, estimate severity, visualize results, and support data-driven road safety decisions.',
+      'SafeRoad AI addresses a practical road-maintenance challenge: turning road images into structured hazard insights. The system detects potholes, estimates severity, visualizes results, and supports faster review.',
     highlights: [
       'Supports faster identification of road hazards.',
-      'Helps transform visual road data into actionable insights.',
+      'Transforms road imagery into actionable maintenance signals.',
       'Combines AI detection, severity analysis, monitoring, and reporting.',
-      'Demonstrates how computer vision can contribute to smart infrastructure.',
-      'Aligns with Saudi Vision 2030 goals for innovation, safety, and digital transformation.',
+      'Shows how computer vision can support safer infrastructure planning.',
+      'Connects technical execution with Saudi Vision 2030 priorities for innovation and digital transformation.',
     ],
     metrics: [
       { label: 'Accuracy', value: '99.5%' },
@@ -103,13 +98,12 @@ export const projects = [
     name: 'Personal Portfolio Website - Building My Digital Identity',
     subtitle: 'Building My Digital Presence',
     description:
-      'Designed and developed a modern responsive portfolio website to showcase my AI projects, skills, academic background, and professional identity. The website was built to support COOP applications, recruiter visibility, and long-term career growth.',
+      'Designed and developed this responsive portfolio as my professional digital identity, combining frontend engineering, UI/UX judgment, brand direction, and deployment practice.',
     highlights: [
-      'Designed and developed a responsive personal portfolio website.',
       'Built reusable React components and centralized project content.',
       'Created a clean visual identity using soft colors, custom branding, and modern animations.',
-      'Deployed the website using GitHub and Vercel with a stable public link.',
-      'Built the website to support COOP applications, recruiter visibility, and long-term career growth.',
+      'Structured sections for selected work, technical strengths, education, learning, and contact.',
+      'Prepared the site for GitHub and Vercel deployment with a stable recruiter-facing link.',
     ],
     technologies: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion', 'Lucide React', 'Git', 'GitHub', 'Vercel'],
   },
@@ -138,22 +132,22 @@ export const courses = [
 export const reasons = [
   {
     title: 'Impact-Oriented Builder',
-    text: 'I focus on building solutions that solve meaningful problems and create real-world value.',
+    text: 'I start from the problem, then shape the technical solution around what people actually need to see, decide, or improve.',
     icon: Rocket,
   },
   {
     title: 'AI & Computer Vision Foundation',
-    text: 'I have hands-on experience with computer vision pipelines, model evaluation, dashboards, and practical AI deployment.',
+    text: 'I have hands-on experience with detection pipelines, model evaluation, dashboards, and deployment-ready project structure.',
     icon: Eye,
   },
   {
     title: 'End-to-End Thinking',
-    text: 'I can move from problem analysis to implementation, testing, visualization, and presentation.',
+    text: 'I can move from analysis to implementation, testing, visualization, documentation, and presentation.',
     icon: Gauge,
   },
   {
     title: 'Professional Digital Presence',
-    text: 'I understand how to present work through GitHub, documentation, portfolio design, and deployed applications.',
+    text: 'I care about how technical work is explained, designed, documented, and shared with professional audiences.',
     icon: Award,
   },
   {
@@ -164,11 +158,9 @@ export const reasons = [
 ];
 
 export const contactLinks = [
-  { label: 'Email', value: profile.email, href: `mailto:${profile.email}`, icon: Mail },
-  { label: 'Phone', value: profile.phone, href: `tel:${profile.phone}`, icon: Phone },
-  { label: 'LinkedIn', value: 'salwa-al-ameer', href: profile.linkedin, icon: Briefcase },
-  { label: 'GitHub', value: 'SalwaAlamer', href: profile.github, icon: SquareTerminal },
-  { label: 'Location Focus', value: 'Saudi Arabia COOP / Internship Opportunities', href: '#contact', icon: MapPinned },
+  { label: 'Email', helper: 'Click to connect', href: `mailto:${profile.email}`, icon: Mail },
+  { label: 'LinkedIn', helper: 'Open profile', href: profile.linkedin, icon: Briefcase },
+  { label: 'GitHub', helper: 'View code', href: profile.github, icon: SquareTerminal },
 ];
 
 export const impactPillars = [
