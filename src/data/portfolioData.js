@@ -32,7 +32,7 @@ export const profile = {
   linkedin: 'https://linkedin.com/in/salwa-al-ameer',
   github: 'https://github.com/SalwaAlamer',
   logo: '/assets/salwa-sa-logo.png',
-  saudiSymbol: '/assets/saudi-symbol.jpg',
+  saudiSymbol: '/assets/saudi-symbol-watermark.png',
   cv: '/assets/Salwa_Alameer_Resume.pdf',
 };
 

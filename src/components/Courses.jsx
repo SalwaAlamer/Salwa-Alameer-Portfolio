@@ -14,9 +14,9 @@ export default function Courses() {
         className="grid gap-4 md:grid-cols-2"
       >
         {courses.map((course) => (
-          <motion.div key={course} variants={fadeUp} whileHover={{ y: -5 }} className="flex gap-4 rounded-[1.6rem] border border-white/70 bg-white/60 p-5 shadow-lg shadow-slate-900/5 backdrop-blur">
+          <motion.div key={course} variants={fadeUp} whileHover={{ y: -5 }} className="flex gap-4 rounded-[1.6rem] border border-white/70 bg-white/60 p-5 shadow-lg shadow-slate-900/5 backdrop-blur transition-colors duration-300 dark:border-[#A2C2E1]/15 dark:bg-white/[0.07] dark:shadow-black/20">
             <BadgeCheck size={22} className="mt-0.5 shrink-0 text-[#6EA8D6]" />
-            <p className="font-semibold leading-7 text-[#2D3748]">{course}</p>
+            <p className="font-semibold leading-7 text-[#2D3748] dark:text-[#E7EEF7]">{course}</p>
           </motion.div>
         ))}
       </motion.div>

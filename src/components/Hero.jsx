@@ -29,7 +29,7 @@ export default function Hero() {
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <a
               href="#project"
-            className="group inline-flex items-center justify-center gap-2 rounded-full bg-[#2D3748] px-6 py-3.5 text-sm font-semibold text-white shadow-xl shadow-slate-900/15 transition hover:bg-[#6EA8D6] hover:shadow-[#6EA8D6]/30"
+            className="group inline-flex items-center justify-center gap-2 rounded-full bg-[#2D3748] px-6 py-3.5 text-sm font-semibold text-white shadow-xl shadow-slate-900/15 transition hover:bg-[#6EA8D6] hover:shadow-[#6EA8D6]/30 dark:bg-[#E7EEF7] dark:text-[#0D1320] dark:shadow-black/20"
             >
               View My Work
               <ArrowRight size={17} className="transition group-hover:translate-x-1" />
@@ -119,9 +119,9 @@ export default function Hero() {
             {impactPillars.map((pillar) => {
               const Icon = pillar.icon;
               return (
-                <div key={pillar.label} className="rounded-3xl border border-white/70 bg-white/60 p-4 shadow-lg shadow-slate-900/5 backdrop-blur-xl">
+                <div key={pillar.label} className="rounded-3xl border border-white/70 bg-white/60 p-4 shadow-lg shadow-slate-900/5 backdrop-blur-xl transition-colors duration-300 dark:border-[#A2C2E1]/15 dark:bg-white/[0.07] dark:shadow-black/20">
                   <Icon size={20} className="mb-3 text-[#6EA8D6]" />
-                  <p className="text-sm font-semibold text-[#2D3748]">{pillar.label}</p>
+                  <p className="text-sm font-semibold text-[#2D3748] dark:text-[#E7EEF7]">{pillar.label}</p>
                 </div>
               );
             })}

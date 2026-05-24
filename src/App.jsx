@@ -18,7 +18,7 @@ export default function App() {
         <img
           src={profile.saudiSymbol}
           alt=""
-          className="w-[145vw] max-w-[82rem] opacity-[0.028] mix-blend-multiply blur-[0.35px] sm:w-[105vw] lg:w-[78vw] dark:opacity-[0.045] dark:mix-blend-screen"
+          className="w-[145vw] max-w-[82rem] opacity-[0.05] mix-blend-multiply blur-[0.35px] sm:w-[105vw] lg:w-[78vw] dark:opacity-[0.075] dark:invert dark:mix-blend-screen"
         />
       </div>
       <Navbar />
