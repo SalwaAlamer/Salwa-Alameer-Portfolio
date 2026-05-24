@@ -4,18 +4,18 @@ import { fadeUp, Section, staggerContainer } from './Section.jsx';
 
 export default function WhyHireMe() {
   return (
-    <Section id="why-hire-me" eyebrow="Why Hire Me" title="Ready to contribute to COOP teams building useful technology." className="bg-[#EEF5FB]">
+    <Section id="why-hire-me" eyebrow="Why Hire Me" title="Ready to contribute to teams building useful technology." className="bg-[#EEF5FB]/80">
       <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
         <div className="glass-panel rounded-[2rem] p-7">
           <p className="text-lg leading-8 text-slate-600">
-            Salwa brings a strong Computer Science and Artificial Intelligence background, high academic
-            performance, and practical experience developing a complete computer vision system from data
-            preparation through dashboard delivery.
+            I combine AI knowledge with practical implementation. I can move from idea to data preparation,
+            model development, dashboard design, and deployment thinking while keeping the end user and real-world
+            value in focus.
           </p>
           <p className="mt-5 text-lg leading-8 text-slate-600">
-            For COOP and internship roles, she offers the blend recruiters look for: technical curiosity,
-            hands-on execution, a detail-oriented working style, and motivation to contribute to digital
-            transformation initiatives aligned with Saudi Vision 2030.
+            I understand how to present technical work professionally, care about usability and impact, and I am
+            ready to contribute, learn fast, and grow in a COOP environment aligned with digital transformation and
+            Saudi Vision 2030.
           </p>
         </div>
 

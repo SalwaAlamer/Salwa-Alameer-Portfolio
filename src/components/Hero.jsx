@@ -20,12 +20,6 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="max-w-3xl"
         >
-          <img
-            src={profile.saudiSymbol}
-            alt=""
-            aria-hidden="true"
-            className="mb-5 h-auto w-28 opacity-[0.16] mix-blend-multiply sm:w-32"
-          />
           <p className="mb-4 text-base font-semibold text-[#6EA8D6] sm:text-lg">{profile.title}</p>
           <h1 className="max-w-4xl text-[2.35rem] font-semibold leading-[1.05] tracking-tight text-[#2D3748] sm:text-6xl lg:text-7xl">
             {profile.headline}
