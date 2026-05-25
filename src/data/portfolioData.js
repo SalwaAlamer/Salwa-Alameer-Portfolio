@@ -95,6 +95,21 @@ export const projects = [
     ],
   },
   {
+    name: 'Waraq - Grade Any Exam in 10 Seconds',
+    subtitle: 'AI-Powered Exam Grading Platform',
+    github: 'https://github.com/SalwaAlamer/Waraq-Platform',
+    description:
+      'Waraq is an AI-powered handwritten exam grading platform using Gemini Vision, FastAPI, and Next.js. It extracts answers from exam papers, grades them semantically, provides bilingual feedback, and includes a teacher dashboard with analytics.',
+    highlights: [
+      'Supports handwritten exam upload for teacher review workflows.',
+      'Uses Gemini Vision OCR to extract answers from exam papers.',
+      'Applies AI-assisted grading with bilingual feedback.',
+      'Includes a teacher dashboard for grading activity and student insights.',
+      'Provides analytics and CSV export for easier reporting.',
+    ],
+    technologies: ['Next.js', 'FastAPI', 'Gemini Vision', 'SQLite', 'Tailwind CSS', 'Recharts', 'EasyOCR'],
+  },
+  {
     name: 'Personal Portfolio Website - Building My Digital Identity',
     subtitle: 'Building My Digital Presence',
     description:
